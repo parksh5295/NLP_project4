@@ -3,6 +3,7 @@ import argparse
 from architecture import *
 from dataloader import *
 from sklearn.metrics import accuracy_score
+from tqdm import tqdm
 
 
 def test(model, test_loader):

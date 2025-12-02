@@ -21,7 +21,7 @@ if __name__ == '__main__':
     os.makedirs('./results/', exist_ok=True)
     
     parser = argparse.ArgumentParser()
-    parser.add_argument('--lr', type=float, default=5e-5)
+    parser.add_argument('--lr', type=float, default=2e-5)
     parser.add_argument('--epochs', type=int, default=15)
     parser.add_argument('--batch_size', type=int, default=16)
     args = parser.parse_args()

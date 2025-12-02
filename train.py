@@ -19,6 +19,8 @@ def train(model, optimizer, loss_fn, epochs, train_loader, valid_loader):
             loss = loss_fn(logits, labels)
             loss.backward()
             optimizer.step()
+            
+            total_loss += loss.item()
         
         accuracy = test(model, valid_loader)
         print(f"Epoch {epoch+1} Train Loss {total_loss / len(train_loader)}")

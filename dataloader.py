@@ -4,7 +4,7 @@ import pandas as pd
 
 
 class TextDataset(Dataset):
-    def __init__(self, texts, labels, tokenizer, max_length=64, is_train=False):
+    def __init__(self, texts, labels, tokenizer, max_length=128, is_train=False):
         self.texts = texts
         self.labels = labels
         self.tokenizer = tokenizer
